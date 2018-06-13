@@ -2,20 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Демо-страница</title>
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div style="display: none">
-      <include src="build/img/sprite.svg"></include>
-    </div>
+
+    <header class="header">
+      <div class="header__centering">
+        <button class="header__burger" type="button"></button>
+        <nav class="header__navigation navigation">
+          <div class="navigation__wrapper">
+            <ul class="navigation__list">
+              <li class="navigation__item"></li>
+              <li class="navigation__item"></li>
+              <li class="navigation__item"></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      main
+      <section class="hero">
+        <div class="hero__centering">
+
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="portfolio__centering">
+          <ul class="portfolio__list">
+            <li class="portfolio__item"></li>
+            <li class="portfolio__item"></li>
+            <li class="portfolio__item"></li>
+            <li class="portfolio__item"></li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__centering">
+
+      </div>
+    </footer>
     <include src="source/_footer.html"></include>
     <script src="js/main.js"></script>
   </body>
