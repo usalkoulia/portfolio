@@ -2,46 +2,133 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet">
+    <title>Portfolio Yuliia Usalko</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700|Roboto&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+
+  <body class="body">
 
     <header class="header">
       <div class="header__centering">
-        <button class="header__burger" type="button"></button>
-        <nav class="header__navigation navigation">
-          <div class="navigation__wrapper">
-            <ul class="navigation__list">
-              <li class="navigation__item"></li>
-              <li class="navigation__item"></li>
-              <li class="navigation__item"></li>
-            </ul>
-          </div>
+        <a class="header__logo" href="#">logo</a>
+        <button class="header__button" type="button" name="button" aria-label="open menu">
+          <svg width="20" height="20" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h16v2H0zM0 7h16v2H0zM0 14h16v2H0z"/></svg>
+        </button>
+        <nav class="header__navigatoin navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">About me</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Portfolio</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Contacts</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="https://github.com/usalkoulia">
+                <svg width="35" height="35" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M45 1H5C2.8 1 1 2.8 1 5v40c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4V5c0-2.2-1.8-4-4-4z" fill="#282828"/><path d="M30.4 40h-8v-4c-5.5 1.2-7-3-7-3-1-2-2-3-2-3-2-1.2 0-1 0-1 2 0 3 2 3 2 1.8 3 4.9 2.5 6 2 0-1 .4-2.5 1-3-4.4-.5-8-3-8-8s1-6 2-7c-.2-.5-1-2.3 0-5 0 0 2 0 4 3 1-1 4-1 5-1s4 0 5 1c2-3 4-3 4-3 1.1 2.7.2 4.5 0 5 1 1 2 2 2 7s-3.6 7.5-8 8c.6.5 1 2.2 1 3v7z" fill="#FFF"/></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.linkedin.com/in/yuliia-usalko-0830b3157/">
+                <svg width="35" height="35" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M45 1H5C2.8 1 1 2.8 1 5v40c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4V5c0-2.2-1.8-4-4-4z" fill="#0E76A8"/><g fill="#FFF"><path d="M21.3 20.7h5.2v2.6c.7-1.4 2.6-2.6 5.2-2.6 5.5 0 6.1 3.1 6.1 7.8V38h-5.2v-8.7c0-2 .2-4.3-2.6-4.3-3.5 0-3.5 2.1-3.5 4.3V38h-5.2V20.7zM12.7 20.7h5.2V38h-5.2z"/><circle cx="15.3" cy="15" r="3"/></g></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/">
+                <svg width="35" height="35" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path d="M45 1H5C2.8 1 1 2.8 1 5v40c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4V5c0-2.2-1.8-4-4-4z" fill="#3A5BA0"/><path d="M32 26l1-5h-5v-4c0-1.5.8-2 3-2h2v-5h-4c-4.1 0-7 2.4-7 7v4h-5v5h5v14h6V26h4z" fill="#FFF"/></svg>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main>
+      <h1 class="visually-hidden">Page for my works</h1>
+
       <section class="hero">
         <div class="hero__centering">
+          <h2 class="hero__title"><span class="hero__label">Портфолио</span>HTML верстальщик</h2>
+        </div>
+      </section>
 
+      <section class="about">
+        <div class="about__centering">
+          <div class="about__header section-header">
+            <div class="section-header__wrapper">
+              <h2 class="section-header__title">About me</h2>
+            </div>
+          </div>
+          <div class="about__wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
       </section>
 
       <section class="portfolio">
-        <div class="portfolio__centering">
-          <ul class="portfolio__list">
-            <li class="portfolio__item"></li>
-            <li class="portfolio__item"></li>
-            <li class="portfolio__item"></li>
-            <li class="portfolio__item"></li>
-          </ul>
+        <div class="portfolio__header section-header">
+          <div class="section-header__wrapper">
+            <h2 class="section-header__title">My works</h2>
+          </div>
+        </div>
+        <div class="portfolio__wrapper">
+          <div class="portfolio__centering">
+            <ul class="portfolio__list">
+              <li class="portfolio__item item">
+                <div class="item__wrapper item__wrapper--info">
+                  <div class="item__text-wrapper">
+                    <h3 class="item__title">ADRIANNA</h3>
+                    <p class="item__text">She is the graphic designer with 3 years of professional experience.</p>
+                  </div>
+                </div>
+                <div class="item__wrapper item__wrapper--image">
+                  <div class="item__image-wrapper">
+                    <img class="item__image" src="img/pic.png" alt="pic" width="480" height="240">
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__item item">
+                <div class="item__wrapper item__wrapper--info">
+                  <div class="item__text-wrapper">
+                    <h3 class="item__title">ADRIANNA</h3>
+                    <p class="item__text">She is the graphic designer with 3 years of professional experience.</p>
+                  </div>
+                </div>
+                <div class="item__wrapper item__wrapper--image">
+                  <div class="item__image-wrapper">
+                    <img class="item__image" src="img/pic.png" alt="pic" width="480" height="240">
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio__item item">
+                <div class="item__wrapper item__wrapper--info">
+                  <div class="item__text-wrapper">
+                    <h3 class="item__title">ADRIANNA</h3>
+                    <p class="item__text">She is the graphic designer with 3 years of professional experience.</p>
+                  </div>
+                </div>
+                <div class="item__wrapper item__wrapper--image">
+                  <div class="item__image-wrapper">
+                    <img class="item__image" src="img/pic.png" alt="pic" width="480" height="240">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+
+    <section class="contacts">
+
+    </section>
+
     </main>
 
     <footer class="footer">
@@ -49,7 +136,6 @@
 
       </div>
     </footer>
-    <include src="source/_footer.html"></include>
     <script src="js/main.js"></script>
   </body>
 </html>

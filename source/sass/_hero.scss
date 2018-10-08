@@ -1,0 +1,23 @@
+.hero {
+  min-height: 400px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero__centering {
+  padding: 0 15px;
+  padding-top: 115px;
+}
+
+.hero__label {
+  font-size: 24px;
+  display: block;
+}
+
+.hero__title {
+  font-size: 36px;
+}

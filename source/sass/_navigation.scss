@@ -1,0 +1,29 @@
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  background-color: #ffffff;
+  display: none;
+  padding-top: 60px;
+
+  &--active {
+    display: block;
+    z-index: 999;
+  }
+}
+
+.navigation__list {
+  list-style-type: none;
+}
+
+.navigation__link {
+  text-decoration: none;
+  display: block;
+  padding-left: 15px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 18px;
+}

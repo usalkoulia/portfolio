@@ -1,8 +1,36 @@
 @import "variables";
-@import "fonts";
 @import "mixins";
 @import "centering";
 @import "visually-hidden";
+@import "header";
+@import "navigation";
+@import "social";
+@import "hero";
+@import "section-header";
+@import "about";
+@import "portfolio";
+@import "item";
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #454545; //grey
+
+  &.body--nav-opened {
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
 
 img {
   max-width: 100%;

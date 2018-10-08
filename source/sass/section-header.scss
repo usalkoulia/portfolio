@@ -1,0 +1,23 @@
+.section-header {
+  // min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+
+.section-header__wrapper {
+  border: 2px solid $primary-color;
+  // min-height: 160px;
+  padding: 25px;
+}
+
+.section-header__title {
+  font-size: 36px;
+  line-height: 66px;
+  color: $primary-color;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+}
