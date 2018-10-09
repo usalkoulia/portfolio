@@ -1,14 +1,22 @@
 .social {
   display: flex;
   flex-direction: row;
-  list-style-type: none;
-  position: absolute;
-  bottom: 30px;
-  left: 15px;
+
+  &--navigation {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+  }
+
+  &--contacts {
+    justify-content: center;
+  }
 }
 
 .social__item {
-  margin-right: 25px;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
 }
 
 .social__link {

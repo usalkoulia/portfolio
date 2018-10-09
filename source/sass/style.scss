@@ -10,10 +10,13 @@
 @import "about";
 @import "portfolio";
 @import "item";
+@import "contacts";
+@import "footer";
 
 body {
   background-color: #ffffff;
   font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
   color: #454545; //grey
 
   &.body--nav-opened {
@@ -35,6 +38,10 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  list-style-type: none;
 }
 
 *,
