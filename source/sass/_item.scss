@@ -1,11 +1,9 @@
 .item {
   max-width: 480px;
   margin: 0 auto;
-  list-style-type: none;
 }
 
 .item__wrapper {
-  // min-height: 200px;
   text-align: center;
 
   &--info {
@@ -17,6 +15,7 @@
     position: relative;
   }
 
+  /* рамки */
   &--image::before {
     content: "";
     position: absolute;
@@ -28,6 +27,7 @@
     border-top: none;
   }
 
+  /* треугольник */
   &--image::after {
     content: "";
     position: absolute;
@@ -45,32 +45,105 @@
   border: 2px solid #00000b;
   border-bottom: 0;
   padding: 45px;
-  // min-height: 240px;
 }
 
 .item__title {
   font-size: 35px;
   line-height: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 300;
+  margin-bottom: 30px;
   position: relative;
-}
 
-.item__title::after {
-  content: "";
-  width: 180px;
-  height: 3px;
-  bottom: -10px;
-  left: calc(50% - 90px);
-  background-color: #f34739;
-  position: absolute;
+  /* подчеркивание */
+  &::after {
+    content: "";
+    width: 180px;
+    height: 3px;
+    bottom: -15px;
+    left: calc(50% - 90px);
+    background-color: #f34739;
+    position: absolute;
+  }
 }
 
 .item__image-wrapper {
   border-top: 0;
-  // min-height: 220px;
 }
 
 .item__image {
   width: 100%;
+  height: 240px;
+  // object-fit: cover;
+}
+
+@media (min-width: $desktop-min-width) {
+  .item {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+
+    &:nth-child(odd) {
+      .item__wrapper--info {
+        order: 2;
+        padding: 20px 20px 20px 0;
+      }
+
+      .item__wrapper--image {
+        order: 1;
+
+        &::before {
+          right: 0;
+          left: 20px;
+          border-left: 3px solid #ffffff;
+          border-right: none;
+        }
+
+        &::after {
+          right: -15px;
+          left: auto;
+          transform: rotate(90deg);
+        }
+      }
+
+      .item__text-wrapper {
+        border: 3px solid #00000b;
+        border-left: 0;
+      }
+    }
+  }
+
+  .item__wrapper {
+    flex-basis: 50%;
+
+    &--info {
+      padding: 20px 0 20px 20px;
+    }
+
+    &--image::before {
+      left: 0;
+      top: 20px;
+      right: 20px;
+      border: 3px solid #ffffff;
+      border-left: none;
+    }
+
+    &--image::after {
+      top: calc(50% - 20px);
+      left: -15px;
+      border-width: 30px 30px 0 30px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .item__text-wrapper {
+    border: 3px solid #00000b;
+    border-right: 0;
+    padding: 82px;
+  }
+
+  .item__image {
+    height: 300px;
+    // object-fit: fill;
+  }
 }

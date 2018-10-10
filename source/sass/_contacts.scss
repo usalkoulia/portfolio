@@ -38,8 +38,10 @@
   }
 }
 
-.contacts__text {
+.contacts__text,
+.contacts__link {
   color: #4a4a4a;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -64,5 +66,11 @@
   .contacts__centering {
     @include desktop-centering;
     padding: 50px 60px;
+  }
+
+  .contacts__link {
+    &:hover {
+      color: #e1e1e1;
+    }
   }
 }

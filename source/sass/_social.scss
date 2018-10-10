@@ -26,3 +26,11 @@
     vertical-align: top;
   }
 }
+
+@media (min-width: $desktop-min-width) {
+  .social__link {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,3 +1,17 @@
 .portfolio__header {
   background-image: url("../img/portfolio.jpg");
 }
+
+@media (min-width: $desktop-min-width) {
+  .portfolio {
+    margin-bottom: 30px;
+  }
+
+  .portfolio__centering {
+    @include desktop-centering;
+  }
+
+  .portfolio__header {
+    margin-bottom: 50px;
+  }
+}
