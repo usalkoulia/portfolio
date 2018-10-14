@@ -2,6 +2,10 @@
   background-image: url("../img/portfolio.jpg");
 }
 
+.portfolio__wrapper {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $desktop-min-width) {
   .portfolio {
     margin-bottom: 30px;
