@@ -1,21 +1,14 @@
-.navigation {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 80%;
-  background-color: #ffffff;
+.navigation__list {
   display: none;
-  padding-top: 60px;
 
   &--active {
     display: block;
-    z-index: 999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    background-color: #ffffff;
   }
-}
-
-.navigation__list {
-  list-style-type: none;
 }
 
 .navigation__link {
@@ -26,4 +19,103 @@
   line-height: 50px;
   font-weight: bold;
   font-size: 18px;
+  color: #4a4a4a;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.navigation__button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  vertical-align: top;
+
+  span {
+    display: none;
+  }
+
+  .icon {
+    vertical-align: top;
+
+    &--close {
+      display: none;
+    }
+  }
+
+  &--active {
+    .icon {
+      &--close {
+        display: inline-block;
+      }
+
+      &--open {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .navigation {
+    position: absolute;
+    left: 75%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    transition: all 0.4s ease;
+
+    &--active {
+      left: 0;
+
+      .navigation__list {
+        display: block;
+        position: static;
+        background-color: black;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .navigation__item {
+    display: inline-block;
+  }
+
+  .navigation__link {
+    padding-left: 20px;
+
+    &:hover {
+      color: #e1e1e1;
+    }
+  }
+
+  .navigation__button {
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      fill: #ffffff;
+    }
+
+    span {
+      display: block;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-left: 15px;
+    }
+
+    &--active {
+      span {
+        display: none;
+      }
+    }
+  }
 }

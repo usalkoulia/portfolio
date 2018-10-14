@@ -18,6 +18,8 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   color: #454545; //grey
+  overflow-x: hidden;
+  overflow-y: auto;
 
   &.body--nav-opened {
     overflow: hidden;

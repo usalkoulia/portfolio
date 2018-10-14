@@ -6,3 +6,9 @@
   padding: 15px;
   margin-bottom: 20px;
 }
+
+@media (min-width: $desktop-min-width) {
+  .about__wrapper {
+    @include desktop-centering;
+  }
+}

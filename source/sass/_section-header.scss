@@ -1,15 +1,16 @@
 .section-header {
-  // min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 20px 15px;
   margin-bottom: 20px;
+}
+
+.section-header__centering {
+  padding: 20px 15px;
 }
 
 .section-header__wrapper {
   border: 2px solid #ffffff;
-  // min-height: 160px;
   padding: 25px;
 }
 
@@ -20,4 +21,11 @@
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $desktop-min-width) {
+  .section-header__centering {
+    @include desktop-centering;
+    padding: 50px 20px;
+  }
 }
