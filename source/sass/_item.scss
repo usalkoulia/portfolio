@@ -48,12 +48,17 @@
 }
 
 .item__title {
-  font-size: 35px;
-  line-height: 22px;
-  font-family: $secondary-font;
-  font-weight: 300;
-  margin-bottom: 30px;
   position: relative;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 24px;
+    font-family: $secondary-font;
+    font-weight: 300;
+    color: #454545;
+  }
 
   /* подчеркивание */
   &::after {
@@ -79,22 +84,27 @@
   top: 0;
   bottom: 0;
   z-index: 99;
-  opacity: 0;
-  background-color: rgba(255, 255, 255, 0.65);
-  transition: opacity 0.3s ease;
-  // filter: blur(100px);
+  background-color: transparent;
+  transition: all 0.3s ease;
 
   svg {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     position: absolute;
-    top: calc(50% - 30px);
+    top: calc(50% - 60px);
     fill: #4a4a4a;
-    left: calc(50% - 30px);
+    left: calc(50% - 60px);
+    opacity: 0;
+    transition: all 0.3s ease;
   }
 
-  &:hover {
-    opacity: 1;
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.65);
+
+    svg {
+      opacity: 0.65;
+    }
   }
 }
 
@@ -173,6 +183,5 @@
 
   .item__image {
     height: 300px;
-    // object-fit: fill;
   }
 }
