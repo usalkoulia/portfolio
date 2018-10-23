@@ -5,6 +5,7 @@
 @import "header";
 @import "navigation";
 @import "social";
+@import "overlay";
 @import "hero";
 @import "section-header";
 @import "about";
@@ -15,9 +16,9 @@
 
 body {
   background-color: #ffffff;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  color: #454545; //grey
+  color: #444641;
   overflow-x: hidden;
   overflow-y: auto;
 

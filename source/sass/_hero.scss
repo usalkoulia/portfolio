@@ -16,15 +16,17 @@
 .hero__centering {
   padding: 0 15px;
   padding-top: 115px;
+  position: relative;
+  z-index: 15;
+}
+
+.hero__title {
+  font-size: 36px;
 }
 
 .hero__label {
   font-size: 24px;
   display: block;
-}
-
-.hero__title {
-  font-size: 36px;
 }
 
 @media (min-width: $tablet-min-width) {
