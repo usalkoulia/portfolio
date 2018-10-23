@@ -71,6 +71,7 @@ gulp.task("build", function (done) {
 
 gulp.task("copy", function () {
   return gulp.src([
+    "source/public/**",
     "source/fonts/**/*.{woff,woff2}",
     "source/js/**",
     "source/img/**/*.svg"

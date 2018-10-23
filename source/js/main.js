@@ -8,6 +8,8 @@ button.addEventListener("click", function() {
   navigation.classList.toggle("navigation--active");
 });
 
+//отложить загрузку картинок вне вьюпорта
+
 var srcsets = document.querySelectorAll("[data-srcset]");
 var srcs = document.querySelectorAll("[data-src]");
 
@@ -22,3 +24,5 @@ Array.from(srcs).forEach(function(src) {
   src.setAttribute("src", value);
   src.removeAttribute("data-src");
 });
+
+new SmoothScroll('a[href*="#"]');

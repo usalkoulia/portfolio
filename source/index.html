@@ -43,13 +43,13 @@
           </button>
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#about">Обо мне</a>
+              <a class="navigation__link" data-scroll href="#about">Обо мне</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#portfolio">Портфолио</a>
+              <a class="navigation__link" data-scroll href="#portfolio">Портфолио</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#contacts">Контакты</a>
+              <a class="navigation__link" data-scroll href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -74,6 +74,7 @@
             </div>
           </div>
         </div> -->
+        <h2 class="visually-hidden">Обо мне</h2>
         <div class="about__centering">
           <div class="about__wrapper">
             <p class="about__text">Привет! Я Юлия Усалко, верстальщик. Отлично знаю HTML (в том числе HTML5) и CSS (в том числе CSS3), знакома с Javascript. Умею верстать адаптивно/отзывчиво, резиново и статично. Все, что верстаю — валидно, семантично, доступно, кроссбраузерно, соответствует макету (как правило) и отлично выглядит (всегда).</p>
@@ -141,10 +142,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/cat_desktop@1x.webp 1x, img/cat_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/cat_mobile@1x.webp 1x, img/cat_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="img/cat_desktop@1x.webp 1x, img/cat_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="img/cat_mobile@1x.webp 1x, img/cat_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/cat_desktop@1x.jpg 1x, img/cat_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-srcset="img/cat_desktop@1x.jpg 1x, img/cat_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/cat_mobile@1x.jpg" data-srcset="img/cat_mobile@2x.jpg 2x" alt="cat">
                   </picture>
                 </div>
@@ -164,10 +165,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/cozy_desktop@1x.webp 1x, img/cozy_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/cozy_mobile@1x.webp 1x, img/cozy_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/cozy_desktop@1x.webp 1x, img/cozy_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/cozy_mobile@1x.webp 1x, img/cozy_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/cozy_desktop@1x.jpg 1x, img/cozy_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/cozy_desktop@1x.jpg 1x, img/cozy_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/cozy_mobile@1x.jpg" data-srcset="img/cozy_mobile@2x.jpg 2x" alt="arbitrage">
                   </picture>
                 </div>
@@ -186,10 +190,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/arbitrage_desktop@1x.webp 1x, img/arbitrage_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/arbitrage_mobile@1x.webp 1x, img/arbitrage_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/arbitrage_desktop@1x.webp 1x, img/arbitrage_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/arbitrage_mobile@1x.webp 1x, img/arbitrage_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/arbitrage_desktop@1x.jpg 1x, img/arbitrage_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/arbitrage_desktop@1x.jpg 1x, img/arbitrage_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/arbitrage_mobile@1x.jpg" data-srcset="img/arbitrage_mobile@2x.jpg 2x" alt="arbitrage">
                   </picture>
                 </div>
@@ -208,10 +215,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/glacy_desktop@1x.webp 1x, img/glacy_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/glacy_mobile@1x.webp 1x, img/glacy_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/glacy_desktop@1x.webp 1x, img/glacy_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/glacy_mobile@1x.webp 1x, img/glacy_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/glacy_desktop@1x.jpg 1x, img/glacy_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/glacy_desktop@1x.jpg 1x, img/glacy_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/glacy_mobile@1x.jpg" data-srcset="img/glacy_mobile@2x.jpg 2x" alt="cat">
                   </picture>
                 </div>
@@ -230,10 +240,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/pink_desktop@1x.webp 1x, img/pink_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/pink_mobile@1x.webp 1x, img/pink_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/pink_desktop@1x.webp 1x, img/pink_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/pink_mobile@1x.webp 1x, img/pink_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/pink_desktop@1x.jpg 1x, img/pink_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/pink_desktop@1x.jpg 1x, img/pink_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/pink_mobile@1x.jpg" data-srcset="img/pink_mobile@2x.jpg 2x" alt="cat">
                   </picture>
                 </div>
@@ -252,10 +265,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/sedona_desktop@1x.webp 1x, img/sedona_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/sedona_mobile@1x.webp 1x, img/sedona_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/sedona_desktop@1x.webp 1x, img/sedona_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/sedona_mobile@1x.webp 1x, img/sedona_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/sedona_desktop@1x.jpg 1x, img/sedona_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/sedona_desktop@1x.jpg 1x, img/sedona_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/sedona_mobile@1x.jpg" data-srcset="img/sedona_mobile@2x.jpg 2x" alt="cat">
                   </picture>
                 </div>
@@ -274,10 +290,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg>
                   </a>
                   <picture>
-                    <source type="image/webp" media="(min-width: 1025px)" data-srcset="img/technomart_desktop@1x.webp 1x, img/technomart_desktop@2x.webp 2x">
-                    <source type="image/webp" data-srcset="img/technomart_mobile@1x.webp 1x, img/technomart_mobile@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/technomart_desktop@1x.webp 1x, img/technomart_desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/technomart_mobile@1x.webp 1x, img/technomart_mobile@2x.webp 2x">
 
-                    <source media="(min-width: 1025px)" data-srcset="img/technomart_desktop@1x.jpg 1x, img/technomart_desktop@2x.jpg 2x">
+                    <source media="(min-width: 1025px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    data-srcset="img/technomart_desktop@1x.jpg 1x, img/technomart_desktop@2x.jpg 2x">
                     <img class="item__image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="img/technomart_mobile@1x.jpg" data-srcset="img/technomart_mobile@2x.jpg 2x" alt="cat">
                   </picture>
                 </div>
@@ -329,9 +348,10 @@
 
     <footer class="footer" role="contentinfo">
       <div class="footer__centering">
-        <p class="footer__copyright">Lorem ipsum dolor sit amet, consectetur adipisicing elit. (c)</p>
+        <p class="footer__copyright">Copyright &#169; Усалко Юлия («YUUS») 2018. <a class="footer__link" href="https://www.profiwins.com.ua/ru/legislation/laws/1052.html">Все авторские права защищены.</a></p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
