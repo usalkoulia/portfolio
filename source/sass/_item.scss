@@ -57,18 +57,14 @@
     line-height: 24px;
     font-family: $secondary-font;
     font-weight: 300;
-    color: #191919;;
+    color: #191919;
   }
 
   /* подчеркивание */
   &::after {
-    content: "";
     width: 180px;
     height: 3px;
-    bottom: -15px;
     left: calc(50% - 90px);
-    background-color: #dd7368;
-    position: absolute;
   }
 }
 

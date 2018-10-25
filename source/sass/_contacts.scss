@@ -20,13 +20,9 @@
   margin-bottom: 35px;
 
   &::after {
-    content: "";
-    position: absolute;
     height: 1px;
     width: 160px;
-    background-color: #78B8C4;
     left: calc(50% - 80px);
-    bottom: -15px;
   }
 }
 
@@ -40,7 +36,7 @@
 
 .contacts__text,
 .contacts__link {
-  color: $secondary-font-color;
+  color: #807a7a;
   text-decoration: none;
 }
 

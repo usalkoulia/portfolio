@@ -1,0 +1,14 @@
+.gradient-title {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    background: linear-gradient(45deg, #78b8c4 0%, #dd7368 50%, #78b8c4);
+    transition: background-position 0.7s ease;
+    background-size: 300px auto;
+  }
+
+  &:hover::after {
+    background-position: -150px;
+  }
+}
