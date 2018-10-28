@@ -23,21 +23,6 @@ body {
   color: $primary-font-color;
   overflow-x: hidden;
   overflow-y: auto;
-  //
-  // &.body--nav-opened {
-  //   overflow: hidden;
-  //
-  //   &::after {
-  //     content: "";
-  //     position: fixed;
-  //     left: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     top: 0;
-  //     z-index: 100;
-  //     background: rgba(0, 0, 0, 0.7);
-  //   }
-  // }
 }
 
 img {
