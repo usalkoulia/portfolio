@@ -8,6 +8,7 @@
   color: #ffffff;
   text-align: center;
   margin-bottom: 30px;
+  position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero_mobile@2x.jpg");
@@ -66,10 +67,12 @@
 .hero__link {
   display: inline-block;
   width: 30px;
-  position: relative;
+  height: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 15px);
   text-align: center;
-  vertical-align: center;
-  margin-top: 70px;
+  z-index: 15;
   animation-name: link;
   animation-duration: 2s;
   animation-direction: alternate;
@@ -100,23 +103,19 @@
 
 @keyframes link {
   0% {
-    left: 0;
-    top: 0;
+    transform: translate(0, 0);
   }
 
   10% {
-    left: 0;
-    top: 12px;
+    transform: translate(0, 12px);
   }
 
   20% {
-    left: 0;
-    top: 0;
+    transform: translate(0, 0);
   }
 
   100% {
-    left: 0;
-    top: 0;
+    transform: translate(0, 0);
   }
 }
 
@@ -137,10 +136,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero_tablet@2x.jpg");
     }
-  }
-
-  .hero__link {
-    margin-top: 140px;
   }
 }
 
