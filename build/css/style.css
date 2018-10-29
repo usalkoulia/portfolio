@@ -263,6 +263,7 @@
   bottom: 50px;
   left: calc(50% - 15px);
   text-align: center;
+  text-decoration: none;
   z-index: 15;
   -webkit-animation-name: link;
           animation-name: link;
@@ -813,3 +814,8 @@ ul {
           box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+input,
+textarea,
+button {
+  font-family: "Open Sans", "Arial", sans-serif; }
