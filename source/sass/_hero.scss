@@ -30,6 +30,106 @@
   display: block;
 }
 
+.hero__heading {
+  span {
+    font-size: 26px;
+    font-weight: 300;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      width: 30px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 20px;
+    }
+
+    &::before {
+      left: -40px;
+    }
+
+    &::after {
+      right: -40px;
+    }
+  }
+}
+
+.hero__content {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+.hero__link {
+  display: inline-block;
+  width: 30px;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 70px;
+  animation-name: link;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+  &::before,
+  &::after {
+    content: "〉";
+    height: 30px;
+    width: 30px;
+    line-height: 31px;
+    position: absolute;
+    left: 0;
+    transform: rotate(90deg);
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: 10px;
+  }
+}
+
+@keyframes link {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10% {
+    left: 0;
+    top: 12px;
+  }
+
+  20% {
+    left: 0;
+    top: 0;
+  }
+
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero__heading {
+    font-size: 18px;
+  }
+
+  .hero__content {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: $tablet-min-width) {
   .hero {
     background-image: url("../img/hero_tablet@1x.jpg");
@@ -37,6 +137,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero_tablet@2x.jpg");
     }
+  }
+
+  .hero__link {
+    margin-top: 140px;
   }
 }
 
