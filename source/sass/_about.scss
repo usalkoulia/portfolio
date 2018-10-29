@@ -11,10 +11,6 @@
   margin-bottom: 20px;
 }
 
-.about__text {
-  margin-bottom: 30px;
-}
-
 .about__table {
   border-collapse: collapse;
   margin: 0 auto;
@@ -31,17 +27,40 @@
   color: $primary-font-color;
 }
 
+.about__text {
+  margin-bottom: 30px;
+
+  br {
+    display: none;
+  }
+}
+
 .about__download {
+  display: inline-block;
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 30px;
   text-align: center;
   margin-left: 10px;
   color: #ffffff;
+  text-transform: uppercase;
   background-size: 200px auto;
 
   &:hover {
-    background-position: -130px;
+    background-position: -120px;
+  }
+}
+
+@media (max-width: 450px) {
+  .about__download {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .about__text {
+    br {
+      display: block;
+    }
   }
 }
 
