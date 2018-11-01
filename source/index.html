@@ -288,6 +288,7 @@
                       <a href="https://usalkoulia.github.io/technomart/" target="_blank" rel="noopener">Техномарт</a>
                     </h3>
                     <p class="item__text">Интернет-магазин строительных материалов.</p>
+                    <p class="item__note">Фиксированный макет, <br>сделан в рамках интенсива HTML-academy.</p>
                   </div>
                 </div>
                 <div class="item__wrapper item__wrapper--image">
@@ -350,13 +351,13 @@
 
           <div class="contacts__form">
             <p style="text-align: center; margin-bottom: 30px; font-size: 26px; font-weight: 300;">Либо напишите мне прям здесь:</p>
-            <form class="form" action="index.html" method="post">
+            <form class="form" action="index.html" method="post" id="contacts">
               <label class="visually-hidden" for="name">Поле для ввода имени</label>
-              <input class="form__input" type="text" name="name" placeholder="Имя" id="name">
+              <input class="form__input" type="text" name="name" placeholder="Имя" id="name1" required>
               <label class="visually-hidden" for="email">Поле для ввода email</label>
-              <input class="form__input" type="text" name="email" placeholder="Email" id="email">
+              <input class="form__input" type="email" name="email" placeholder="Email" id="email" required>
               <label class="visually-hidden" for="comment">Поле для ввода комментария</label>
-              <textarea class="form__textarea" name="comment" placeholder="Комментарий" id="comment"></textarea>
+              <textarea class="form__textarea" name="comment" placeholder="Комментарий" id="comment" required></textarea>
               <button class="form__button gradient" type="submit" name="button">Отправить</button>
             </form>
           </div>

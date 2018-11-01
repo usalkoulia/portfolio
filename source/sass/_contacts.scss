@@ -44,6 +44,59 @@
   text-decoration: none;
 }
 
+.contacts__form {
+  position: relative;
+
+  &--success,
+  &--error {
+    &::after {
+      content: "Отправлено!";
+      position: absolute;
+      left: -5px;
+      right: -5px;
+      top: -5px;
+      bottom: -5px;
+      background-color: #101010;
+      color: #ffffff;
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: 300;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fade-in 0.5s ease, fade-out 0.5s ease 2.5s;
+    }
+  }
+
+  &--error {
+    &::after {
+      content: "Произошла ошибка!\aПопробуйте ещё раз.";
+      white-space: pre;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 @media (min-width: $tablet-min-width + 100px) {
   .contacts__centering {
     padding: 50px 15px;
@@ -75,6 +128,10 @@
   .contacts__centering {
     @include desktop-centering;
     padding: 50px 15px;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 0;
   }
 
   .contacts__link {

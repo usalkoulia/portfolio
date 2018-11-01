@@ -30,3 +30,47 @@ Array.from(srcs).forEach(function(src) {
 // плавная прокрутка
 
 new SmoothScroll('a[href*="#"]');
+
+// отправка формы
+
+var form = document.querySelector('#contacts');
+var name1 = document.querySelector('#name1');
+var email = document.querySelector('#email');
+var comment = document.querySelector('#comment');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  fetch('https://tzfpol08y5.execute-api.us-east-2.amazonaws.com/default/message', {
+    method: 'POST',
+    body: JSON.stringify({
+      name: name1.value,
+      email: email.value,
+      comment: comment.value,
+    }),
+    headers: {
+      'x-api-key': 'wEYyOQJ5Y26FHMrFmJRpf4n4ok6u8OLF1IakR0cs',
+      'content-type': 'application/json',
+    }
+  }).then(function(response) {
+    if (response.status === 200) {
+      var successWrapper = document.querySelector('.contacts__form');
+      successWrapper.classList.add('contacts__form--success');
+      name1.value = '';
+      email.value = '';
+      comment.value = '';
+
+      setTimeout(function() {
+        successWrapper.classList.remove('contacts__form--success');
+      }, 3000);
+    } else {
+      throw new Error('Not 200 response');
+    }
+  }).catch(function() {
+    var errorWrapper = document.querySelector('.contacts__form');
+    errorWrapper.classList.add('contacts__form--error');
+    setTimeout(function() {
+      errorWrapper.classList.remove('contacts__form--error');
+    }, 3000);
+  });
+});
