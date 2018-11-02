@@ -16,6 +16,15 @@
 }
 
 .contacts__title {
+  margin-bottom: 40px;
+  font-family: $secondary-font;
+  font-size: 34px;
+  font-weight: 200;
+  text-align: center;
+  position: relative;
+}
+
+.contacts__item-title {
   font-family: $secondary-font;
   font-size: 32px;
   font-weight: 200;
