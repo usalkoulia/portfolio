@@ -16,9 +16,12 @@
   clip: rect(0 0 0 0); }
 
 .gradient {
-  background: linear-gradient(45deg, #78b8c4 0%, #dd7368 50%, #78b8c4);
+  background: linear-gradient(45deg, #78b8c4 0%, #dd7368 50%, #78b8c4 100%);
   -webkit-transition: background-position 0.7s ease;
-  transition: background-position 0.7s ease; }
+  transition: background-position 0.7s ease;
+  background-size: 300% 100%; }
+  .gradient:hover {
+    background-position: 100%; }
 
 .gradient-title::after {
   content: "";
@@ -54,10 +57,7 @@
   text-decoration: none;
   text-transform: uppercase;
   line-height: 34px;
-  color: #ffffff;
-  background-size: 300px auto; }
-  .header__logo:hover {
-    background-position: -200px; }
+  color: #ffffff; }
 
 @media (min-width: 1025px) {
   .header {
@@ -66,7 +66,7 @@
     width: 100%;
     max-width: 1025px;
     margin: 0 auto;
-    min-height: 80px; }
+    height: 80px; }
   .header__logo {
     width: 100px;
     height: 45px;
@@ -404,10 +404,7 @@
   text-align: center;
   margin-left: 10px;
   color: #ffffff;
-  text-transform: uppercase;
-  background-size: 200px auto; }
-  .about__download:hover {
-    background-position: -120px; }
+  text-transform: uppercase; }
 
 @media (max-width: 450px) {
   .about__download {
@@ -853,9 +850,7 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  background-size: 750px auto; }
-  .form__button:hover {
-    background-position: -300px; }
+  background-position: -200px; }
 
 @media (max-width: 868px) {
   .form {
