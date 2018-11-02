@@ -44,7 +44,22 @@
 .item__text-wrapper {
   border: 2px solid $primary-color;
   border-bottom: 0;
-  padding: 45px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item__text {
+  margin-bottom: 15px;
+}
+
+.item__note {
+  color: #797575;
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+  // opacity: 0.5;
 }
 
 .item__title {
