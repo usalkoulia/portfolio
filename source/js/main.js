@@ -15,17 +15,17 @@ button.addEventListener("click", function() {
 var srcsets = document.querySelectorAll("[data-srcset]");
 var srcs = document.querySelectorAll("[data-src]");
 
-Array.from(srcsets).forEach(function(srcset) {
-  var value = srcset.getAttribute("data-srcset");
-  srcset.setAttribute("srcset", value);
-  srcset.removeAttribute("data-srcset");
-});
+for (var i = 0; i < srcsets.length; i++) {
+  var value = srcsets[i].getAttribute("data-srcset");
+  srcsets[i].setAttribute("srcset", value);
+  srcsets[i].removeAttribute("data-srcset");
+}
 
-Array.from(srcs).forEach(function(src) {
-  var value = src.getAttribute("data-src");
-  src.setAttribute("src", value);
-  src.removeAttribute("data-src");
-});
+for (var i = 0; i < srcs.length; i++) {
+  var value = srcs[i].getAttribute("data-src");
+  srcs[i].setAttribute("src", value);
+  srcs[i].removeAttribute("data-src");
+}
 
 // плавная прокрутка
 
