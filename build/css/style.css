@@ -522,7 +522,25 @@
 .item__text-wrapper {
   border: 2px solid #0e0e0d;
   border-bottom: 0;
-  padding: 45px; }
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.item__text {
+  margin-bottom: 15px; }
+
+.item__note {
+  color: #797575;
+  font-size: 14px;
+  text-align: center;
+  font-style: italic; }
 
 .item__title {
   position: relative;
@@ -647,13 +665,21 @@
   background-image: url("../img/contacts.jpg"); }
 
 .contacts__title {
+  margin-bottom: 40px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 34px;
+  font-weight: 200;
+  text-align: center;
+  position: relative; }
+
+.contacts__item-title {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 32px;
   font-weight: 200;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 35px; }
-  .contacts__title::after {
+  .contacts__item-title::after {
     height: 1px;
     width: 160px;
     left: calc(50% - 80px); }
@@ -667,6 +693,60 @@
 .contacts__link {
   color: #807a7a;
   text-decoration: none; }
+
+.contacts__form {
+  position: relative; }
+  .contacts__form--success::after, .contacts__form--error::after {
+    content: "Отправлено!";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background-color: #101010;
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 300;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-animation: fade-in 0.5s ease, fade-out 0.5s ease 2.5s;
+            animation: fade-in 0.5s ease, fade-out 0.5s ease 2.5s; }
+  .contacts__form--error::after {
+    content: "Произошла ошибка!\aПопробуйте ещё раз.";
+    white-space: pre; }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 @media (min-width: 868px) {
   .contacts__centering {
@@ -701,6 +781,8 @@
     max-width: 1025px;
     margin: 0 auto;
     padding: 50px 15px; }
+  .contacts__wrapper {
+    margin-bottom: 0; }
   .contacts__link:hover {
     color: #e1e1e1; } }
 
