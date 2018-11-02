@@ -47,11 +47,7 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  background-size: 750px auto;
-
-  &:hover {
-    background-position: -300px;
-  }
+  background-position: -200px;
 }
 
 @media (max-width: $tablet-min-width + 100px) {

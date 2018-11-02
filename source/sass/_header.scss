@@ -16,11 +16,6 @@
   text-transform: uppercase;
   line-height: 34px;
   color: #ffffff;
-  background-size: 300px auto;
-
-  &:hover {
-    background-position: -200px;
-  }
 }
 
 @media (min-width: $desktop-min-width) {
@@ -30,7 +25,7 @@
 
   .header__centering {
     @include desktop-centering;
-    min-height: 80px;
+    height: 80px;
   }
 
   .header__logo {

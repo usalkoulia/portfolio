@@ -1,4 +1,9 @@
 .gradient {
-  background: linear-gradient(45deg, #78b8c4 0%, #dd7368 50%, #78b8c4);
+  background: linear-gradient(45deg, #78b8c4 0%, #dd7368 50%, #78b8c4 100%);
   transition: background-position 0.7s ease;
+  background-size: 300% 100%;
+
+  &:hover {
+    background-position: 100%;
+  }
 }
