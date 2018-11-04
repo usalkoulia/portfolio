@@ -537,7 +537,9 @@
   color: #797575;
   font-size: 14px;
   text-align: center;
-  font-style: italic; }
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 400; }
 
 .item__title {
   position: relative;
